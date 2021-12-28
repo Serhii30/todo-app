@@ -1,0 +1,37 @@
+.btnPrimary {
+  width: 155px;
+  margin: 0 15px 15px 0;
+  border-radius: 50px;
+  line-height: 40px;
+  font-weight: 700;
+  background-color: #c9b4e3;
+  font-family: 'Comfortaa', sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+.btnDelete {
+  height: 15px;
+  width: 5px;
+  margin-left: 20px;
+  font-family: 'Comfortaa', sans-serif;
+  background-color: #ff0000;
+  border-radius: 4px;
+}
+
+.btnAdd {
+  border-radius: 10px;
+  width: 80px;
+  height: 52px;
+  outline: none;
+  margin-left: 20px;
+  background-color: #dbb544;
+  font-family: 'Comfortaa', sans-serif;
+}
