@@ -1,4 +1,4 @@
-import React, {ButtonHTMLAttributes} from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 import s from './Button.module.scss'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -8,7 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     id?: string
 }
 
-const Button = ({children, onClick, btnClass, id}: ButtonProps) => {
+const Button = ({ children, onClick, btnClass, id }: ButtonProps) => {
 
     return (
         <button

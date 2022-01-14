@@ -1,8 +1,8 @@
 import React from 'react'
 import TodoItem from '../TodoItem/TodoItem'
-import {useTypedSelector} from '../hooks/useTypedSelector'
+import { useTypedSelector } from '../hooks/useTypedSelector'
+import { Todo, visibilityFilters } from '../../types/todo'
 import s from './TodoList.module.scss'
-import {Todo, visibilityFilters} from '../../types/todo'
 
 const TodoList: React.FC = () => {
     const todos = useTypedSelector(state => state.todos.todos)
@@ -24,12 +24,12 @@ const TodoList: React.FC = () => {
     if (todos.length === 0) {
         return <p className={s.noTask}>завдань не має!</p>
     }
-    
+
     return (
         <ul>
-            {visibleTodos.map((todo: Todo) => <TodoItem key={todo.id} todo={todo}/>)}
+            {visibleTodos.map((todo: Todo) => <TodoItem key={todo.id} todo={todo} />)}
         </ul>
     )
 }
 
-export default TodoList;
+export default TodoList

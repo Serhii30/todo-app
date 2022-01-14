@@ -6,7 +6,7 @@ interface TitleProps {
     titleClass?: string
 }
 
-const Title = ({title, titleClass}: TitleProps) => (
+const Title = ({ title, titleClass }: TitleProps) => (
     <h1 className={`${s.title} ${titleClass ? s[titleClass] : ''}`}>
         {title}
     </h1>

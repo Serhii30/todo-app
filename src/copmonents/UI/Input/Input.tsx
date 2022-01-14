@@ -1,4 +1,4 @@
-import React, {InputHTMLAttributes} from 'react'
+import React, { InputHTMLAttributes } from 'react'
 import s from './Input.module.scss'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -9,7 +9,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const Input = ({value, type, inputClass, placeholder, onChange}: InputProps) => {
+const Input = ({ value, type, inputClass, placeholder, onChange }: InputProps) => {
     return (
         <input
             className={`${s.input} ${inputClass ? s[inputClass] : ''}`}
